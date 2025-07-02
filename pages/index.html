@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="../styles/home.css">
+    <title>Welcome to BookFlix</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="nav-logo">BookFlix</div>
+            <div class="nav">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="right-section nav">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="carousel" aria-label="Image slideshow">
+        <div class="slides" id="slides"></div>
+        <div class="controls">
+            <button class="arrow" onclick="prevSlide()" aria-label="Previous Slide">&#10094;</button>
+            <button class="arrow" onclick="nextSlide()" aria-label="Next Slide">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="card-container" id="card-container"></div>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/home.js"></script>
+</body>
+</html>
